@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="labsWPF.Results"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="LightGray">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Margin="0,20,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="110" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <BoxView
+                    Grid.Row="0"
+                    Grid.ColumnSpan="4"
+                    BackgroundColor="White" />
+                <BoxView
+                    Grid.Row="2"
+                    Grid.ColumnSpan="4"
+                    BackgroundColor="White" />
+                <BoxView
+                    Grid.Row="4"
+                    Grid.ColumnSpan="4"
+                    BackgroundColor="White" />
+                <BoxView
+                    Grid.Row="6"
+                    Grid.ColumnSpan="4"
+                    BackgroundColor="White" />
+                <BoxView
+                    Grid.Row="8"
+                    Grid.ColumnSpan="4"
+                    BackgroundColor="White" />
+                <BoxView
+                    Grid.Row="10"
+                    Grid.ColumnSpan="4"
+                    BackgroundColor="White" />
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="Задача"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    HorizontalTextAlignment="Center"
+                    Text="Ваш ответ"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    HorizontalTextAlignment="Center"
+                    Text="Правильный ответ"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="3"
+                    Margin="0,0,15,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="End"
+                    Text="Результат"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="1"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="2"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="3"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="4"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="5"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="6"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="7"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="8"
+                    Grid.Column="0"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="8"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="9"
+                    Grid.Column="0"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="9"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="10"
+                    Grid.Column="0"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="10"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+
+                <Label
+                    x:Name="ans1"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="ans2"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="ans3"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="ans4"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="ans5"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="ans6"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="ans7"
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="ans8"
+                    Grid.Row="8"
+                    Grid.Column="1"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="ans9"
+                    Grid.Row="9"
+                    Grid.Column="1"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="ans10"
+                    Grid.Row="10"
+                    Grid.Column="1"
+                    Margin="15,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+
+                <Label
+                    x:Name="res1"
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="res2"
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="res3"
+                    Grid.Row="3"
+                    Grid.Column="3"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="res4"
+                    Grid.Row="4"
+                    Grid.Column="3"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="res5"
+                    Grid.Row="5"
+                    Grid.Column="3"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="res6"
+                    Grid.Row="6"
+                    Grid.Column="3"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="res7"
+                    Grid.Row="7"
+                    Grid.Column="3"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="res8"
+                    Grid.Row="8"
+                    Grid.Column="3"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="res9"
+                    Grid.Row="9"
+                    Grid.Column="3"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="res10"
+                    Grid.Row="10"
+                    Grid.Column="3"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+
+                <Label
+                    x:Name="rightAns1"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="rightAns2"
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="rightAns3"
+                    Grid.Row="3"
+                    Grid.Column="2"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="rightAns4"
+                    Grid.Row="4"
+                    Grid.Column="2"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="rightAns5"
+                    Grid.Row="5"
+                    Grid.Column="2"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="rightAns6"
+                    Grid.Row="6"
+                    Grid.Column="2"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="rightAns7"
+                    Grid.Row="7"
+                    Grid.Column="2"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="rightAns8"
+                    Grid.Row="8"
+                    Grid.Column="2"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="rightAns9"
+                    Grid.Row="9"
+                    Grid.Column="2"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+                <Label
+                    x:Name="rightAns10"
+                    Grid.Row="10"
+                    Grid.Column="2"
+                    Margin="50,0,0,0"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="0"
+                    TextColor="Black"
+                    VerticalOptions="Center" />
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

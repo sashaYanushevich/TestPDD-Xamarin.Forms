@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="labsWPF.Main"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundImageSource="fon.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame
+                Margin="25,200,25,0"
+                BackgroundColor="Black"
+                CornerRadius="20"
+                Opacity="0.5"
+                BorderColor="White">
+                <StackLayout>
+                    <Label
+                        Padding="0"
+                        FontAttributes="Bold"
+                        FontSize="44"
+                        HorizontalOptions="Center"
+                        Text="Экзамен ПДД" />
+                    <Label
+                        Padding="0"
+                        FontAttributes="Bold"
+                        FontSize="22"
+                        HorizontalOptions="Center"
+                        Text="Республика Беларусь" />
+                    <Button
+                        x:Name="startTest"
+                        Clicked="startTest_Clicked"
+                        Margin="0,30,0,0"
+                        BorderColor="White"
+                        BorderWidth="2"
+                        CornerRadius="15"
+                        FontAttributes="Bold"
+                        FontSize="24"
+                        HorizontalOptions="Center"
+                        Text="Начать!"
+                        WidthRequest="170" />
+
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

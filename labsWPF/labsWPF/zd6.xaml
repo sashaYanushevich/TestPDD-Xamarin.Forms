@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="labsWPF.zd6"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="Gray">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame
+                Padding="10"
+                BackgroundColor="LightGray"
+                HeightRequest="25"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start">
+                <Grid>
+                    <Label
+                        x:Name="num1"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        BackgroundColor="Gray"
+                        HeightRequest="25"
+                        HorizontalTextAlignment="Center"
+                        Text="1"
+                        TextColor="Black"
+                        VerticalTextAlignment="Center" />
+                    <Label
+                        x:Name="num2"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        BackgroundColor="Gray"
+                        HorizontalTextAlignment="Center"
+                        Text="2"
+                        TextColor="Black"
+                        VerticalTextAlignment="Center" />
+                    <Label
+                        x:Name="num3"
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        BackgroundColor="Gray"
+                        HorizontalTextAlignment="Center"
+                        Text="3"
+                        TextColor="Black"
+                        VerticalTextAlignment="Center" />
+                    <Label
+                        x:Name="num4"
+                        Grid.Row="0"
+                        Grid.Column="3"
+                        BackgroundColor="Gray"
+                        HorizontalTextAlignment="Center"
+                        Text="4"
+                        TextColor="Black"
+                        VerticalTextAlignment="Center" />
+                    <Label
+                        x:Name="num5"
+                        Grid.Row="0"
+                        Grid.Column="4"
+                        BackgroundColor="Gray"
+                        HorizontalTextAlignment="Center"
+                        Text="5"
+                        TextColor="Black"
+                        VerticalTextAlignment="Center" />
+                    <Label
+                        x:Name="num6"
+                        Grid.Row="0"
+                        Grid.Column="5"
+                        BackgroundColor="Gray"
+                        HorizontalTextAlignment="Center"
+                        Text="6"
+                        TextColor="Black"
+                        VerticalTextAlignment="Center" />
+                    <Label
+                        x:Name="num7"
+                        Grid.Row="0"
+                        Grid.Column="6"
+                        BackgroundColor="Gray"
+                        HorizontalTextAlignment="Center"
+                        Text="7"
+                        TextColor="Black"
+                        VerticalTextAlignment="Center" />
+                    <Label
+                        x:Name="num8"
+                        Grid.Row="0"
+                        Grid.Column="7"
+                        BackgroundColor="Gray"
+                        HorizontalTextAlignment="Center"
+                        Text="8"
+                        TextColor="Black"
+                        VerticalTextAlignment="Center" />
+                    <Label
+                        x:Name="num9"
+                        Grid.Row="0"
+                        Grid.Column="8"
+                        BackgroundColor="Gray"
+                        HorizontalTextAlignment="Center"
+                        Text="9"
+                        TextColor="Black"
+                        VerticalTextAlignment="Center" />
+                    <Label
+                        x:Name="num10"
+                        Grid.Row="0"
+                        Grid.Column="9"
+                        BackgroundColor="Gray"
+                        HorizontalOptions="Fill"
+                        HorizontalTextAlignment="Center"
+                        Text="10"
+                        TextColor="Black"
+                        VerticalOptions="Fill"
+                        VerticalTextAlignment="Center" />
+                </Grid>
+            </Frame>
+
+            <Label
+                x:Name="questionLabel"
+                Margin="20,0,5,0"
+                FontSize="18"
+                Text="Разрешается ли пешеходу перейти в указанном месте через дорогу с разделительной полосой? " />
+            <Grid Padding="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="30" />
+                </Grid.ColumnDefinitions>
+                <Button
+                    x:Name="prefBut"
+                    Grid.Column="0"
+                    Clicked="prefBut_Clicked"
+                    FontSize="20"
+                    HorizontalOptions="Start"
+                    Text="❮"
+                    TextColor="White"
+                    WidthRequest="50" />
+                <Frame
+                    x:Name="imageFrame"
+                    Grid.Column="1"
+                    Margin="15"
+                    Padding="0"
+                    CornerRadius="20">
+                    <Image
+                        x:Name="imagePdd"
+                        Aspect="AspectFill"
+                        HeightRequest="200"
+                        HorizontalOptions="CenterAndExpand"
+                        Source="firts.jpg"
+                        VerticalOptions="Center"
+                        WidthRequest="400" />
+                </Frame>
+                <Button
+                    x:Name="nextBut"
+                    Grid.Column="2"
+                    Clicked="nextBut_Clicked"
+                    FontSize="20"
+                    HorizontalOptions="End"
+                    Text="❯"
+                    TextColor="White"
+                    WidthRequest="50" />
+            </Grid>
+
+            <ScrollView>
+                <StackLayout>
+                    <Button
+                        x:Name="questBut1"
+                        Margin="10,0,10,0"
+                        BackgroundColor="White"
+                        Clicked="questBut1_Clicked"
+                        Text="1."
+                        TextColor="Black" />
+                    <Button
+                        x:Name="questBut2"
+                        Margin="10,0,10,0"
+                        BackgroundColor="White"
+                        Clicked="questBut2_Clicked"
+                        Text="2."
+                        TextColor="Black" />
+                    <Button
+                        x:Name="questBut3"
+                        Margin="10,0,10,0"
+                        BackgroundColor="White"
+                        Clicked="questBut3_Clicked"
+                        Text="3."
+                        TextColor="Black" />
+                    <Button
+                        x:Name="questBut4"
+                        Margin="10,0,10,0"
+                        BackgroundColor="White"
+                        Clicked="questBut4_Clicked"
+                        Text="4."
+                        TextColor="Black" />
+                </StackLayout>
+            </ScrollView>
+            <Frame
+                x:Name="infoFrame2"
+                Padding="3"
+                VerticalOptions="EndAndExpand">
+                <Label
+                    x:Name="infoFrame"
+                    Padding="0"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="Ждём ответа..."
+                    TextColor="Black" />
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
